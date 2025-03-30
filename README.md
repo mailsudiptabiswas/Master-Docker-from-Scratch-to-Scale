@@ -11,7 +11,7 @@ Welcome to the **Master Lab Repository** that accompanies the book **“Masterin
 - 🧾 Capstone Lab (Production-ready Deployment)
 - 🎓 Docker Certified Associate (DCA) Exam Lab Kit
 
-> This lab suite is a complete learning journey for **DevOps engineers, SREs, platform teams, and DCA aspirants**.
+> This lab suite is a complete learning journey for **DevOps engineers, Site Reliability Engineering (SREs), platform teams, and DCA aspirants**.
 
 ---
 
