@@ -3,14 +3,9 @@ let questions = [];
 let current = 0;
 let score = 0;
 let timer;
+let answered = false;
 
 console.log("✅ script.js loaded");
-
-if (typeof questionBank !== 'undefined') {
-  console.log("🧠 Questions loaded:", questionBank.length);
-} else {
-  console.error("❌ questionBank is undefined!");
-}
 
 function startTimer(duration) {
   let time = duration;
@@ -40,49 +35,92 @@ function shuffle(array) {
 }
 
 function showQuestion() {
+  answered = false;
   const q = questions[current];
   const box = document.getElementById('question-box');
   box.innerHTML = '';
+
   if (q.type === "MCQ") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
-    q.options.forEach((opt, i) => {
+    if (q.options && Array.isArray(q.options)) {
+  q.options.forEach((opt, i) => {
+      const optId = `option-${i}`;
       box.innerHTML += `
-        <div><label>
-          <input type="radio" name="option" value="${i}"> ${opt}
-        </label></div>
+        <div>
+          <label>
+            <input type="radio" name="option" value="${i}" id="${optId}" onclick="checkMCQAnswer(${i})">
+            ${opt}
+          </label>
+        </div>
       `;
-    });
+      });
+}
+    box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
   } else if (q.type === "DOMC") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
     box.innerHTML += `
       <button onclick="submitDOMC(true)">Yes</button>
       <button onclick="submitDOMC(false)">No</button>
+      <div id="explanation" style="margin-top:10px;"></div>
     `;
   }
 }
 
-function nextQuestion() {
+function checkMCQAnswer(selectedIndex) {
+  if (answered) return;
   const q = questions[current];
-  if (q.type === "MCQ") {
-    const selected = document.querySelector('input[name="option"]:checked');
-    if (selected && parseInt(selected.value) === q.answer) score++;
+  answered = true;
+  const explanationBox = document.getElementById("explanation");
+  const allOptions = document.querySelectorAll('input[name="option"]');
+
+  allOptions.forEach((opt, i) => {
+    opt.disabled = true;
+    const parent = opt.parentElement;
+    if (i === q.answer) {
+      parent.style.color = "green";
+    } else if (i === selectedIndex) {
+      parent.style.color = "red";
+    }
+    });
+}
+
+  if (selectedIndex === q.answer) score++;
+
+  if (q.explanation) {
+    explanationBox.innerHTML = "💡 Explanation: " + q.explanation;
+    explanationBox.style.display = "block";
   }
-  current++;
-  if (current >= questions.length) {
-    endQuiz();
-  } else {
-    showQuestion();
-  }
+
+  document.getElementById('next-btn').disabled = false;
 }
 
 function submitDOMC(answer) {
+  if (answered) return;
+  answered = true;
   const q = questions[current];
-  if (q.correct === answer) score++;
+  const box = document.getElementById("explanation");
+
+  if (q.correct === answer) {
+    score++;
+    box.innerHTML = "✅ Correct!";
+  } else {
+    box.innerHTML = "❌ Incorrect!";
+  }
+
+  if (q.explanation) {
+    box.innerHTML += "<br>💡 Explanation: " + q.explanation;
+  }
+
+  document.getElementById('next-btn').disabled = false;
+}
+
+function nextQuestion() {
   current++;
   if (current >= questions.length) {
     endQuiz();
   } else {
     showQuestion();
+    document.getElementById('next-btn').disabled = true;
   }
 }
 
