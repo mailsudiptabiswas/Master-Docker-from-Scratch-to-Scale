@@ -94,7 +94,9 @@ cd lab03-volume-backup
 - [Lab 47 – Docker Hardening Practices](./labs/47_docker-hardening-practices/README.md)
 - [Lab 48 – Supply Chain Security (SBOM, Signatures)](./labs/48_supply-chain-security/README.md)
 - [Lab 49 – CI/CD Infrastructure GitOps](./labs/49_cicd-infra-gitops-lab/README.md)
-- [Lab 50 – Production Readiness Checklist](./labs/50_docker-production-checklist/README.md)---
+- [Lab 50 – Production Readiness Checklist](./labs/50_docker-production-checklist/README.md)
+
+---
 
 ## 🎓 DCA Exam Lab Kit
 
