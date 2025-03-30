@@ -1,6 +1,6 @@
 # 📘 Docker Labs 01–10
 
-- **[01_docker-introduction](./01_docker-introduction/README.md)** — 🧱 Introduction to Docker CLI, containers, and the core concepts.
+- **[Lab-01 Docker Introduction](./Basic Hands-on Labs/01_docker-introduction/README.md)** — 🧱 Introduction to Docker CLI, containers, and the core concepts.
 - **[02_installation-check](./02_installation-check/README.md)** — ✅ Verify Docker installation, check versions, run hello-world.
 - **[03_docker-cli-explore](./03_docker-cli-explore/README.md)** — 🔍 Explore docker CLI commands like ps, images, exec, rm.
 - **[04_images-containers](./04_images-containers/README.md)** — 📦 Understand images vs containers, run vs build, inspect layers.
