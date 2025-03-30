@@ -62,7 +62,7 @@ Please install the following tools before beginning:
 
 ## 🎯 Certification Alignment
 
-These labs map directly to the official [Docker Certified Associate exam blueprint](https://docs.docker.com/certify/dca/), covering:
+These labs map directly to the official [Docker Certified Associate exam blueprint](https://training.mirantis.com/certification/dca-certification-exam), covering:
 - Installation & Configuration
 - Image Creation & Management
 - Orchestration (Docker Compose/Swarm)
