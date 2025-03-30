@@ -7,8 +7,6 @@ let answered = false;
 let domcOptions = [];
 let domcIndex = 0;
 
-console.log("✅ script.js loaded");
-
 function startTimer(duration) {
   let time = duration;
   const display = document.getElementById('timer');
@@ -27,10 +25,10 @@ function startTimer(duration) {
 function startExam() {
   document.getElementById('start-btn').style.display = 'none';
   document.getElementById('next-btn').style.display = 'inline';
-  questions = shuffle(questionBank.filter(q =>
-    (q.type === "MCQ" && Array.isArray(q.options)) ||
+  questions = shuffle(questionBank).filter(q =>
+    (q.type === "MCQ" && Array.isArray(q.options) && typeof q.answer === 'number') ||
     (q.type === "DOMC" && Array.isArray(q.options) && Array.isArray(q.correctOptions))
-  )).slice(0, 50);
+  ).slice(0, 50);
   startTimer(2 * 60 * 60);
   showQuestion();
   document.getElementById('next-btn').disabled = true;
@@ -48,21 +46,21 @@ function showQuestion() {
 
   if (q.type === "MCQ") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
-    if (q.options && Array.isArray(q.options)) {
-      q.options.forEach((opt, i) => {
-        const optId = `option-${i}`;
-        box.innerHTML += `
-          <div>
-            <label>
-              <input type="radio" name="option" value="${i}" id="${optId}" onclick="checkMCQAnswer(${i})">
-              ${opt}
-            </label>
-          </div>
-        `;
-      });
-    }
+    q.options.forEach((opt, i) => {
+      const optId = `option-${i}`;
+      box.innerHTML += `
+        <div>
+          <label>
+            <input type="radio" name="option" value="${i}" id="${optId}" onclick="checkMCQAnswer(${i})">
+            ${opt}
+          </label>
+        </div>
+      `;
+    });
     box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
-  } else if (q.type === "DOMC") {
+  }
+
+  if (q.type === "DOMC") {
     domcOptions = q.options.map((opt, i) => ({
       text: opt,
       correct: q.correctOptions.includes(i),
@@ -103,9 +101,9 @@ function checkMCQAnswer(selectedIndex) {
 function showDOMCOption() {
   const q = questions[current];
   const box = document.getElementById("question-box");
-  box.innerHTML = `<h3>Q${current + 1}. ${q.question}</h3>`;
-  
   const option = domcOptions[domcIndex];
+
+  box.innerHTML = `<h3>Q${current + 1}. ${q.question}</h3>`;
   box.innerHTML += `
     <div>
       <label>
@@ -119,10 +117,9 @@ function showDOMCOption() {
 
 function submitDOMCOption() {
   const isChecked = document.getElementById("domcCheck").checked;
-  const option = domcOptions[domcIndex];
-  option.userSelected = isChecked;
-
+  domcOptions[domcIndex].userSelected = isChecked;
   domcIndex++;
+
   if (domcIndex < domcOptions.length) {
     showDOMCOption();
   } else {
@@ -132,8 +129,8 @@ function submitDOMCOption() {
 
 function finishDOMCQuestion() {
   answered = true;
-  const box = document.getElementById("question-box");
   const q = questions[current];
+  const box = document.getElementById("question-box");
   box.innerHTML = `<h3>Q${current + 1}. ${q.question}</h3>`;
 
   let correctCount = 0;
