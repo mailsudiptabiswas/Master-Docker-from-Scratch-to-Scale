@@ -66,7 +66,7 @@ Each folder corresponds to a chapter and includes:
 
 ## 🏁 Capstone Certification Challenge
 
-See [`capstone-certification-lab/`](./capstone-certification-lab/) for a real-world scenario that tests:
+See [`Capstone Project Lab/`](../capstone-lab/README.md) for a real-world scenario that tests:
 
 - Dockerfile optimization
 - Compose orchestration
