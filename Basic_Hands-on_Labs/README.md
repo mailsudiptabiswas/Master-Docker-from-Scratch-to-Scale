@@ -1,12 +1,14 @@
-# 📘 Docker Labs Basic Labs
+## 📘 Docker Labs Basic Labs
 
-- **[Lab01 Docker Introduction](./01_basic-docker/README.md)** — 🧱 Introduction to Docker CLI, containers, and the core concepts.
-- **[02_installation-check](./02_installation-check/README.md)** — ✅ Verify Docker installation, check versions, run hello-world.
-- **[03_docker-cli-explore](./03_docker-cli-explore/README.md)** — 🔍 Explore docker CLI commands like ps, images, exec, rm.
-- **[04_images-containers](./04_images-containers/README.md)** — 📦 Understand images vs containers, run vs build, inspect layers.
-- **[05_docker-compose-intro](./05_docker-compose-intro/README.md)** — 🔧 Intro to Docker Compose and how to define multi-container apps.
-- **[06_volumes-bindmounts](./06_volumes-bindmounts/README.md)** — 💾 Learn about Docker volumes and bind mounts for data persistence.
-- **[07_docker-networking](./07_docker-networking/README.md)** — 🌐 Understand bridge networks, container-to-container communication.
-- **[08_container-lifecycle](./08_container-lifecycle/README.md)** — 🔄 Lifecycle of containers — create, start, stop, restart, remove.
-- **[09_dockerfiles-advanced](./09_dockerfiles-advanced/README.md)** — 🛠️ Build Docker images using advanced Dockerfile features.
-- **[10_ports-expose-entrypoint](./10_ports-expose-entrypoint/README.md)** — 🚪 Port mapping, EXPOSE, ENTRYPOINT vs CMD behavior.
+# These labs are part of the "Master Docker from Scratch to Scale" series.
+
+- [Lab 01 – Basic Docker](./01_basic-docker/README.md)
+- [Lab 02 – Docker Compose Setup](./02_compose-setup/README.md)
+- [Lab 03 – Swarm Cluster Deployment](./03_swarm-cluster/README.md)
+- [Lab 04 – Monitoring Docker with Grafana/Prometheus](./04_monitoring/README.md)
+- [Lab 05 – Docker Security Hardening](./05_security-hardening/README.md)
+- [Lab 06 – CI/CD with GitHub Actions](./06_ci-cd-github-actions/README.md)
+- [Lab 07 – Volumes & Networking](./07_volumes-networking/README.md)
+- [Lab 08 – Backup & Restore with Volumes](./08_backup-restore/README.md)
+- [Lab 09 – Dockerfile Optimization](./09_dockerfile-optimization/README.md)
+- [Lab 10 – Docker Troubleshooting](./10_docker-troubleshooting/README.md)
