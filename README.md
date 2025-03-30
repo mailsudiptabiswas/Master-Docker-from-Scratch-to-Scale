@@ -25,7 +25,7 @@ cd Master-Docker-from-Scratch-to-Scale
 
 2. Navigate into any lab folder:
 ```bash
-cd lab03-volume-backup
+cd .\labs\01_docker-introduction\
 ```
 
 3. Follow the `README.md` inside each lab.
@@ -132,7 +132,7 @@ Bonus: Generate SBOM, scan images, and push to private registry.
 
 ## ✅ Lab Tracker
 
-📁 `/Lab-Tracker.xlsx` or `/Lab-Tracker.pdf`  
+📁 `/Lab-Tracker/Docker Lab Tracker.xlsx`  
 Track your progress across all labs, mark completed ones, and rate confidence per topic.
 
 ---
