@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+    depends_on:
+      - app
+    networks:
+      - frontend
+
+  app:
+    image: python:3.9-slim
+    command: python -m http.server 5000
+    networks:
+      - frontend
+
+networks:
+  frontend:
