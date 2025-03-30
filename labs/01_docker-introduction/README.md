@@ -1,4 +1,4 @@
-# Chapter 1: Docker Introduction – Lab
+# Lab 1: Docker Introduction – Lab
 
 ## Objective:
 Get hands-on with basic Docker CLI and concepts like image, container, and layer.
