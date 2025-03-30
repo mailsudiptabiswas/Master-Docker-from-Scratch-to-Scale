@@ -20,7 +20,7 @@ Welcome to the **Master Lab Repository** that accompanies the book **“Masterin
 1. **Clone this repository**:
 ```bash
 git clone https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale.git
-cd Master-Docker-from-Scratch-to-Scale.git
+cd Master-Docker-from-Scratch-to-Scale
 ```
 
 2. Navigate into any lab folder:
