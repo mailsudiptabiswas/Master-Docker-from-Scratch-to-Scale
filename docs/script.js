@@ -94,19 +94,33 @@ function checkMCQAnswer(selectedIndex) {
   document.getElementById('next-btn').disabled = false;
 }
 
+
 function submitDOMC(answer) {
   if (answered) return;
   answered = true;
   const q = questions[current];
-  const box = document.getElementById("explanation");
+  
+  // Ensure explanation container exists
+  let box = document.getElementById("explanation");
+  if (!box) {
+    const newBox = document.createElement("div");
+    newBox.id = "explanation";
+    newBox.style.marginTop = "10px";
+    document.getElementById("question-box").appendChild(newBox);
+    box = newBox;
+  }
 
+  // Feedback
   if (q.correct === answer) {
     score++;
     box.innerHTML = "✅ Correct!";
+    box.style.color = "green";
   } else {
     box.innerHTML = "❌ Incorrect!";
+    box.style.color = "red";
   }
 
+  // Add explanation if available
   if (q.explanation) {
     box.innerHTML += "<br>💡 Explanation: " + q.explanation;
   }
@@ -114,15 +128,6 @@ function submitDOMC(answer) {
   document.getElementById('next-btn').disabled = false;
 }
 
-function nextQuestion() {
-  current++;
-  if (current >= questions.length) {
-    endQuiz();
-  } else {
-    showQuestion();
-    document.getElementById('next-btn').disabled = true;
-  }
-}
 
 function endQuiz() {
   clearInterval(timer);
@@ -132,8 +137,41 @@ function endQuiz() {
     <h2>Exam Complete</h2>
     <p>Score: ${score} / ${questions.length}</p>
     <p>Status: ${score >= 35 ? '✅ Pass' : '❌ Fail'}</p>
+    ${score >= 35 ? "<p>🎓 Congratulations! You are certified for this chapter.</p>" : "<p>📚 Please review and try again to certify.</p>"}
+    <canvas id="scoreChart" width="300" height="150"></canvas>
+  `;
+  renderScoreChart(score, questions.length);
+} / ${questions.length}</p>
+    <p>Status: ${score >= 35 ? '✅ Pass' : '❌ Fail'}</p>
   `;
 }
 
 document.getElementById('start-btn').addEventListener('click', startExam);
 document.getElementById('next-btn').addEventListener('click', nextQuestion);
+
+
+
+function renderScoreChart(correct, total) {
+  const ctx = document.getElementById('scoreChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Correct', 'Incorrect'],
+      datasets: [{
+        label: 'Score Summary',
+        data: [correct, total - correct],
+        backgroundColor: ['#2ecc71', '#e74c3c']
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        title: {
+          display: true,
+          text: '📊 Your Score Breakdown'
+        }
+      }
+    }
+  });
+}
