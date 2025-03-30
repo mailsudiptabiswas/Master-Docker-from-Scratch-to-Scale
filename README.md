@@ -1,5 +1,5 @@
 
-# 🐳 Mastering Docker – Lab Collection for DevOps, DCA Certification & Production Readiness
+# 🐳 Mastering Docker from Scratch to Scale – Lab Collection for DevOps, DCA Certification & Production Readiness
 
 Welcome to the **Master Lab Repository** that accompanies the book **“Mastering Docker from Scratch to Scale”**. This repo contains 50+ hands-on labs including:
 
