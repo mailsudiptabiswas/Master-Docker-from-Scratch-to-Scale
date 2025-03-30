@@ -56,8 +56,19 @@ function showQuestion() {
       });
 }
     box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
-  } else if (q.type === "DOMC") {
-    box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
+  } else 
+if (q.type === "DOMC") {
+  // Prepare multiple true/false options for DOMC
+  domcOptions = [
+    { text: "Option A", correct: true },
+    { text: "Option B", correct: false },
+    { text: "Option C", correct: true },
+    { text: "Option D", correct: false }
+  ];
+  domcIndex = 0;
+  showDOMCOption();
+}
+. ${q.question}</h3>`;
     box.innerHTML += `
       <button onclick="submitDOMC(true)">Yes</button>
       <button onclick="submitDOMC(false)">No</button>
