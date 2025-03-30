@@ -19,7 +19,7 @@ Welcome to the **Master Lab Repository** that accompanies the book **“Masterin
 
 1. **Clone this repository**:
 ```bash
-git clone https://github.com/yourname/docker-lab-kit.git
+git clone [https://github.com/yourname/docker-lab-kit.git](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale.git)
 cd docker-lab-kit
 ```
 
