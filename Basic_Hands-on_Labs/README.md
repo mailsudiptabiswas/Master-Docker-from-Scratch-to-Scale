@@ -1,6 +1,6 @@
 # 📘 Docker Labs 01–10
 
-- **[01_docker-introduction](./Basic_Hands-on_Labs/01_docker-introduction/README.md)** — 🧱 Introduction to Docker CLI, containers, and the core concepts.
+- **[01_docker-introduction](./Basic_Hands-on_Labs/01_basic-docker/README.md)** — 🧱 Introduction to Docker CLI, containers, and the core concepts.
 - **[02_installation-check](./02_installation-check/README.md)** — ✅ Verify Docker installation, check versions, run hello-world.
 - **[03_docker-cli-explore](./03_docker-cli-explore/README.md)** — 🔍 Explore docker CLI commands like ps, images, exec, rm.
 - **[04_images-containers](./04_images-containers/README.md)** — 📦 Understand images vs containers, run vs build, inspect layers.
@@ -10,14 +10,3 @@
 - **[08_container-lifecycle](./08_container-lifecycle/README.md)** — 🔄 Lifecycle of containers — create, start, stop, restart, remove.
 - **[09_dockerfiles-advanced](./09_dockerfiles-advanced/README.md)** — 🛠️ Build Docker images using advanced Dockerfile features.
 - **[10_ports-expose-entrypoint](./10_ports-expose-entrypoint/README.md)** — 🚪 Port mapping, EXPOSE, ENTRYPOINT vs CMD behavior.
------
-- **[Lab 01_docker-introduction – 🧱 Introduction to Docker CLI, containers, and the core concepts.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/01_docker-introduction/README.md)**
-- **[Lab 02_installation-check – ✅ Verify Docker installation, check versions, run hello-world.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/02_installation-check/README.md)**
-- **[Lab 03_docker-cli-explore – 🔍 Explore docker CLI commands like ps, images, exec, rm.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/03_docker-cli-explore/README.md)**
-- **[Lab 04_images-containers – 📦 Understand images vs containers, run vs build, inspect layers.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/04_images-containers/README.md)**
-- **[Lab 05_docker-compose-intro – 🔧 Intro to Docker Compose and how to define multi-container apps.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/05_docker-compose-intro/README.md)**
-- **[Lab 06_volumes-bindmounts – 💾 Learn about Docker volumes and bind mounts for data persistence.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/06_volumes-bindmounts/README.md)**
-- **[Lab 07_docker-networking – 🌐 Understand bridge networks, container-to-container communication.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/07_docker-networking/README.md)**
-- **[Lab 08_container-lifecycle – 🔄 Lifecycle of containers — create, start, stop, restart, remove.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/08_container-lifecycle/README.md)**
-- **[Lab 09_dockerfiles-advanced – 🛠️ Build Docker images using advanced Dockerfile features.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/09_dockerfiles-advanced/README.md)**
-- **[Lab 10_ports-expose-entrypoint – 🚪 Port mapping, EXPOSE, ENTRYPOINT vs CMD behavior.](https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale/blob/main/Basic_Hands-on_Labs/10_ports-expose-entrypoint/README.md)**
