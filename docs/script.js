@@ -43,6 +43,31 @@ function showQuestion() {
   if (q.type === "MCQ") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
     if (q.options && Array.isArray(q.options)) {
+      q.options.forEach((opt, i) => {
+        const optId = `option-${i}`;
+        box.innerHTML += `
+          <div>
+            <label>
+              <input type="radio" name="option" value="${i}" id="${optId}" onclick="checkMCQAnswer(${i})">
+              ${opt}
+            </label>
+          </div>
+        `;
+      });
+    }
+    box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
+  } else if (q.type === "DOMC") {
+    // Prepare real options from question definition
+    domcOptions = q.options.map((opt, i) => ({
+      text: opt,
+      correct: q.correctOptions.includes(i),
+      userSelected: false
+    }));
+    domcIndex = 0;
+    showDOMCOption();
+  }
+}. ${q.question}</h3>`;
+    if (q.options && Array.isArray(q.options)) {
   q.options.forEach((opt, i) => {
       const optId = `option-${i}`;
       box.innerHTML += `
@@ -56,19 +81,8 @@ function showQuestion() {
       });
 }
     box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
-  } else 
-if (q.type === "DOMC") {
-  // Prepare multiple true/false options for DOMC
-  domcOptions = [
-    { text: "Option A", correct: true },
-    { text: "Option B", correct: false },
-    { text: "Option C", correct: true },
-    { text: "Option D", correct: false }
-  ];
-  domcIndex = 0;
-  showDOMCOption();
-}
-. ${q.question}</h3>`;
+  } else if (q.type === "DOMC") {
+    box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
     box.innerHTML += `
       <button onclick="submitDOMC(true)">Yes</button>
       <button onclick="submitDOMC(false)">No</button>
