@@ -1,4 +1,4 @@
-# Chapter 3: Docker CLI & Architecture – Lab
+# Lab 3: Docker CLI & Architecture – Lab
 
 ## Objective:
 Explore Docker client-server architecture and use common CLI commands.
