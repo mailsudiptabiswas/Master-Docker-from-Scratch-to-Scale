@@ -3,6 +3,14 @@ let current = 0;
 let score = 0;
 let timer;
 
+console.log("✅ script.js loaded");
+
+if (typeof questionBank !== 'undefined') {
+  console.log("🧠 Questions loaded:", questionBank.length);
+} else {
+  console.error("❌ questionBank is undefined!");
+}
+
 function startTimer(duration) {
   let time = duration;
   const display = document.getElementById('timer');
@@ -37,18 +45,18 @@ function showQuestion() {
   if (q.type === "MCQ") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
     q.options.forEach((opt, i) => {
-      box.innerHTML += \`
+      box.innerHTML += `
         <div><label>
-          <input type="radio" name="option" value="\${i}"> \${opt}
+          <input type="radio" name="option" value="${i}"> ${opt}
         </label></div>
-      \`;
+      `;
     });
   } else if (q.type === "DOMC") {
     box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
-    box.innerHTML += \`
+    box.innerHTML += `
       <button onclick="submitDOMC(true)">Yes</button>
       <button onclick="submitDOMC(false)">No</button>
-    \`;
+    `;
   }
 }
 
@@ -81,11 +89,11 @@ function endQuiz() {
   clearInterval(timer);
   document.getElementById('question-box').innerHTML = '';
   document.getElementById('next-btn').style.display = 'none';
-  document.getElementById('result').innerHTML = \`
+  document.getElementById('result').innerHTML = `
     <h2>Exam Complete</h2>
-    <p>Score: \${score} / \${questions.length}</p>
-    <p>Status: \${score >= 35 ? '✅ Pass' : '❌ Fail'}</p>
-  \`;
+    <p>Score: ${score} / ${questions.length}</p>
+    <p>Status: ${score >= 35 ? '✅ Pass' : '❌ Fail'}</p>
+  `;
 }
 
 document.getElementById('start-btn').addEventListener('click', startExam);
