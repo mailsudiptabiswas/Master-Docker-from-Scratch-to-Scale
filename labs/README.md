@@ -1,6 +1,6 @@
 # 🐳 Master Docker from Scratch to Scale – Complete Lab Collection 
 
-This repository contains hands-on labs for chapters of the **“Master Docker from Scratch to Scale”** book.
+This repository contains hands-on labs about the topices covered in the **“Master Docker from Scratch to Scale”** book.
 
 Each folder corresponds to a chapter and includes:
 - ✅ Step-by-step lab guides
