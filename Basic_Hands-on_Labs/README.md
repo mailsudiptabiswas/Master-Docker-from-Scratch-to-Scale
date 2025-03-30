@@ -1,6 +1,6 @@
-## 📘 Docker Labs Basic Labs
+# 📘 Docker Labs Basic Labs
 
-# These labs are part of the "Master Docker from Scratch to Scale" series.
+## These labs are part of the "Master Docker from Scratch to Scale" series.
 
 - [Lab 01 – Basic Docker](./01_basic-docker/README.md)
 - [Lab 02 – Docker Compose Setup](./02_compose-setup/README.md)
