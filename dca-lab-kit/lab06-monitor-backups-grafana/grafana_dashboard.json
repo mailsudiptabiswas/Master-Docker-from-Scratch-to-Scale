@@ -1,0 +1,12 @@
+{
+  "dashboard": {
+    "title": "Backup Monitoring",
+    "panels": [
+      {
+        "type": "stat",
+        "title": "Last Backup Status",
+        "targets": [{ "expr": "backup_success" }]
+      }
+    ]
+  }
+}

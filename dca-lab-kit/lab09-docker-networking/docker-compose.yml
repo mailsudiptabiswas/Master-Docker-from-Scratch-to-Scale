@@ -1,0 +1,14 @@
+version: '3'
+services:
+  backend:
+    image: nginx
+    networks:
+      - appnet
+  frontend:
+    image: alpine
+    command: sleep 3600
+    networks:
+      - appnet
+
+networks:
+  appnet:
