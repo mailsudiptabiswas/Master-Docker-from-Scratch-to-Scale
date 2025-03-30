@@ -35,7 +35,7 @@ Please install the following tools before beginning:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/)
 - [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) *(for Lab 3)*
-- [Cosign](https://docs.sigstore.dev/cosign/overview) *(for Lab 7)*
+- [Cosign](https://docs.sigstore.dev/cosign/system_config/installation/) *(for Lab 7)*
 - [GPG](https://gnupg.org) *(for Lab 8)*
 - [Grafana + Loki](https://grafana.com/oss/loki/) *(for Lab 6)*
 
