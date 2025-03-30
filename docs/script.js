@@ -1,4 +1,3 @@
-
 let questions = [];
 let current = 0;
 let score = 0;
