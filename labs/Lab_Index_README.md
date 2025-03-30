@@ -1,6 +1,6 @@
 # 📘 Lab Index for Mastering Docker
 
-- [Chapter 01 – Docker Introduction](./labs/01_docker-introduction/README.md)
+- [Chapter 01 – Docker Introduction](./01_docker-introduction/README.md)
 - [Chapter 02 – Volumes & Mounts](./labs/02_volumes-and-mounts/README.md)
 - [Chapter 03 – Networking Basics](./labs/03_networking-basics/README.md)
 - [Chapter 04 – Dockerfile Best Practices](./labs/04_dockerfile-best-practices/README.md)
