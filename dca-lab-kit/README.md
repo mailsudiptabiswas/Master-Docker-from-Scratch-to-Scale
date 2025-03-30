@@ -46,7 +46,7 @@ Please install the following tools before beginning:
 1. Clone or unzip the kit:
    ```bash
    git clone https://github.com/mailsudiptabiswas/Master-Docker-from-Scratch-to-Scale.git
-   cd Master-Docker-from-Scratch-to-Scale.git
+   cd Master-Docker-from-Scratch-to-Scale
    cd docker_dca_lab_kit
    ```
 
