@@ -4,6 +4,8 @@ let current = 0;
 let score = 0;
 let timer;
 let answered = false;
+let domcOptions = [];
+let domcIndex = 0;
 
 console.log("✅ script.js loaded");
 
@@ -25,9 +27,13 @@ function startTimer(duration) {
 function startExam() {
   document.getElementById('start-btn').style.display = 'none';
   document.getElementById('next-btn').style.display = 'inline';
-  questions = shuffle(questionBank).slice(0, 50);
+  questions = shuffle(questionBank.filter(q =>
+    (q.type === "MCQ" && Array.isArray(q.options)) ||
+    (q.type === "DOMC" && Array.isArray(q.options) && Array.isArray(q.correctOptions))
+  )).slice(0, 50);
   startTimer(2 * 60 * 60);
   showQuestion();
+  document.getElementById('next-btn').disabled = true;
 }
 
 function shuffle(array) {
@@ -57,7 +63,6 @@ function showQuestion() {
     }
     box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
   } else if (q.type === "DOMC") {
-    // Prepare real options from question definition
     domcOptions = q.options.map((opt, i) => ({
       text: opt,
       correct: q.correctOptions.includes(i),
@@ -65,29 +70,6 @@ function showQuestion() {
     }));
     domcIndex = 0;
     showDOMCOption();
-  }
-}. ${q.question}</h3>`;
-    if (q.options && Array.isArray(q.options)) {
-  q.options.forEach((opt, i) => {
-      const optId = `option-${i}`;
-      box.innerHTML += `
-        <div>
-          <label>
-            <input type="radio" name="option" value="${i}" id="${optId}" onclick="checkMCQAnswer(${i})">
-            ${opt}
-          </label>
-        </div>
-      `;
-      });
-}
-    box.innerHTML += `<div id="explanation" style="margin-top:10px; display:none;"></div>`;
-  } else if (q.type === "DOMC") {
-    box.innerHTML += `<h3>Q${current + 1}. ${q.question}</h3>`;
-    box.innerHTML += `
-      <button onclick="submitDOMC(true)">Yes</button>
-      <button onclick="submitDOMC(false)">No</button>
-      <div id="explanation" style="margin-top:10px;"></div>
-    `;
   }
 }
 
@@ -106,8 +88,7 @@ function checkMCQAnswer(selectedIndex) {
     } else if (i === selectedIndex) {
       parent.style.color = "red";
     }
-    });
-}
+  });
 
   if (selectedIndex === q.answer) score++;
 
@@ -119,40 +100,68 @@ function checkMCQAnswer(selectedIndex) {
   document.getElementById('next-btn').disabled = false;
 }
 
-
-function submitDOMC(answer) {
-  if (answered) return;
-  answered = true;
+function showDOMCOption() {
   const q = questions[current];
+  const box = document.getElementById("question-box");
+  box.innerHTML = `<h3>Q${current + 1}. ${q.question}</h3>`;
   
-  // Ensure explanation container exists
-  let box = document.getElementById("explanation");
-  if (!box) {
-    const newBox = document.createElement("div");
-    newBox.id = "explanation";
-    newBox.style.marginTop = "10px";
-    document.getElementById("question-box").appendChild(newBox);
-    box = newBox;
-  }
+  const option = domcOptions[domcIndex];
+  box.innerHTML += `
+    <div>
+      <label>
+        <input type="checkbox" id="domcCheck"> "${option.text}"
+      </label>
+    </div>
+    <button onclick="submitDOMCOption()">Submit Option</button>
+    <div id="explanation" style="margin-top:10px;"></div>
+  `;
+}
 
-  // Feedback
-  if (q.correct === answer) {
-    score++;
-    box.innerHTML = "✅ Correct!";
-    box.style.color = "green";
+function submitDOMCOption() {
+  const isChecked = document.getElementById("domcCheck").checked;
+  const option = domcOptions[domcIndex];
+  option.userSelected = isChecked;
+
+  domcIndex++;
+  if (domcIndex < domcOptions.length) {
+    showDOMCOption();
   } else {
-    box.innerHTML = "❌ Incorrect!";
-    box.style.color = "red";
+    finishDOMCQuestion();
   }
+}
 
-  // Add explanation if available
+function finishDOMCQuestion() {
+  answered = true;
+  const box = document.getElementById("question-box");
+  const q = questions[current];
+  box.innerHTML = `<h3>Q${current + 1}. ${q.question}</h3>`;
+
+  let correctCount = 0;
+  domcOptions.forEach(opt => {
+    const user = opt.userSelected ? "✅" : "❌";
+    const actual = opt.correct ? "(Correct)" : "(Incorrect)";
+    if (opt.userSelected === opt.correct) correctCount++;
+    box.innerHTML += `<p>${user} "${opt.text}" ${actual}</p>`;
+  });
+
+  if (correctCount === domcOptions.length) score++;
+
   if (q.explanation) {
-    box.innerHTML += "<br>💡 Explanation: " + q.explanation;
+    box.innerHTML += `<p>💡 Explanation: ${q.explanation}</p>`;
   }
 
   document.getElementById('next-btn').disabled = false;
 }
 
+function nextQuestion() {
+  current++;
+  if (current >= questions.length) {
+    endQuiz();
+  } else {
+    showQuestion();
+    document.getElementById('next-btn').disabled = true;
+  }
+}
 
 function endQuiz() {
   clearInterval(timer);
@@ -166,15 +175,7 @@ function endQuiz() {
     <canvas id="scoreChart" width="300" height="150"></canvas>
   `;
   renderScoreChart(score, questions.length);
-} / ${questions.length}</p>
-    <p>Status: ${score >= 35 ? '✅ Pass' : '❌ Fail'}</p>
-  `;
 }
-
-document.getElementById('start-btn').addEventListener('click', startExam);
-document.getElementById('next-btn').addEventListener('click', nextQuestion);
-
-
 
 function renderScoreChart(correct, total) {
   const ctx = document.getElementById('scoreChart').getContext('2d');
@@ -200,3 +201,6 @@ function renderScoreChart(correct, total) {
     }
   });
 }
+
+document.getElementById('start-btn').addEventListener('click', startExam);
+document.getElementById('next-btn').addEventListener('click', nextQuestion);
