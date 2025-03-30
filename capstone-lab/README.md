@@ -1,4 +1,4 @@
-# 🎓 Capstone Certification Lab – Final Docker Challenge
+# 🎓 Capstone Project Lab – Final Docker Challenge
 
 This is your final practical project for mastering Docker in real-world DevOps scenarios.
 
