@@ -1,4 +1,4 @@
-# Chapter 2: Docker Installation – Lab
+# Lab 2: Docker Installation – Lab
 
 ## Objective:
 Verify Docker is correctly installed on your system.
