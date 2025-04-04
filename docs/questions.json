@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "type": "MCQ",
+    "question": "What is Docker?",
+    "options": {
+      "Option1": "A VM hypervisor",
+      "Option2": "An OS for containers",
+      "Option3": "A containerization platform",
+      "Option4": "A cloud storage tool"
+    },
+    "answer": "Option3",
+    "correct_options": [
+      "Option3"
+    ],
+    "explanation": "Docker is a platform for building, running, and managing containers.",
+    "weightage": 2,
+    "domain": "Installation & Configuration"
+  },
+  {
+    "id": 2,
+    "type": "DOMC",
+    "question": "Which are valid benefits of containerization?",
+    "options": {
+      "Option1": "Portability",
+      "Option2": "Full guest OS per app",
+      "Option3": "Faster start time",
+      "Option4": "Isolation"
+    },
+    "correct_options": [
+      "Option1",
+      "Option3",
+      "Option4"
+    ],
+    "explanation": "Containers are lightweight, portable, and provide isolation.",
+    "weightage": 2,
+    "domain": "Image Creation & Management"
+  },
+  {
+    "id": 3,
+    "type": "TRUEFALSE",
+    "question": "True or False: Containers include an entire guest operating system.",
+    "answer": "False",
+    "correct_options": [
+      "False"
+    ],
+    "explanation": "Containers share the host OS kernel and don't require a full OS per app.",
+    "weightage": 1,
+    "domain": "Container Fundamentals"
+  }
+]
