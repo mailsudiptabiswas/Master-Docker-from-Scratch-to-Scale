@@ -2,50 +2,1030 @@
   {
     "id": 1,
     "type": "MCQ",
-    "question": "What is Docker?",
-    "options": {
-      "Option1": "A VM hypervisor",
-      "Option2": "An OS for containers",
-      "Option3": "A containerization platform",
-      "Option4": "A cloud storage tool"
-    },
-    "answer": "Option3",
-    "correct_options": [
-      "Option3"
+    "question": "What is a container in the context of Docker?",
+    "options": [
+      " A virtual machine",
+      " A lightweight, standalone, executable package of software",
+      " A Linux kernel replacement",
+      " A network protocol"
     ],
-    "explanation": "Docker is a platform for building, running, and managing containers.",
-    "weightage": 2,
-    "domain": "Installation & Configuration"
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "Containers are lightweight environments that bundle an app and its dependencies.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
   },
   {
     "id": 2,
-    "type": "DOMC",
-    "question": "Which are valid benefits of containerization?",
-    "options": {
-      "Option1": "Portability",
-      "Option2": "Full guest OS per app",
-      "Option3": "Faster start time",
-      "Option4": "Isolation"
-    },
-    "correct_options": [
-      "Option1",
-      "Option3",
-      "Option4"
+    "type": "MCQ",
+    "question": "Which of the following best describes Docker?",
+    "options": [
+      " A programming language",
+      " A hypervisor",
+      " A containerization platform",
+      " A database engine"
     ],
-    "explanation": "Containers are lightweight, portable, and provide isolation.",
-    "weightage": 2,
-    "domain": "Image Creation & Management"
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Docker is a containerization platform.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
   },
   {
     "id": 3,
-    "type": "TRUEFALSE",
-    "question": "True or False: Containers include an entire guest operating system.",
-    "answer": "False",
-    "correct_options": [
-      "False"
+    "type": "MCQ",
+    "question": "What is the main advantage of Docker over traditional VMs?",
+    "options": [
+      " Better GUI",
+      " Requires more resources",
+      " Faster startup and lightweight",
+      " Requires a dedicated OS"
     ],
-    "explanation": "Containers share the host OS kernel and don't require a full OS per app.",
-    "weightage": 1,
-    "domain": "Container Fundamentals"
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Containers are faster and more lightweight than traditional VMs.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 4,
+    "type": "MCQ",
+    "question": "What command is used to check installed Docker version?",
+    "options": [
+      " docker check",
+      " docker -v",
+      " docker install version",
+      " docker show"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "docker -v or docker --version shows the installed version.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 5,
+    "type": "MCQ",
+    "question": "Which component of Docker builds images from a Dockerfile?",
+    "options": [
+      " Docker Engine",
+      " Docker Daemon",
+      " Docker Builder",
+      " Docker CLI"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Docker Engine builds and runs containers based on Dockerfile instructions.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 6,
+    "type": "MCQ",
+    "question": "What is the default base image for most minimal containers?",
+    "options": [
+      " Ubuntu",
+      " CentOS",
+      " Alpine",
+      " BusyBox"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Alpine is the most lightweight base image.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 7,
+    "type": "MCQ",
+    "question": "Which command is used to list all Docker containers (running and stopped)?",
+    "options": [
+      " docker ls -a",
+      " docker container show",
+      " docker ps -a",
+      " docker run list"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "docker ps -a lists all containers.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 8,
+    "type": "MCQ",
+    "question": "What is the name of the Docker component that runs in the background and manages containers?",
+    "options": [
+      " Docker CLI",
+      " Docker Client",
+      " Docker Daemon",
+      " Docker Machine"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "The Docker Daemon (dockerd) manages containers.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 9,
+    "type": "MCQ",
+    "question": "Which of the following commands pulls a Docker image from DockerHub?",
+    "options": [
+      " docker push",
+      " docker get",
+      " docker pull",
+      " docker fetch"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "docker pull fetches images from DockerHub.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 10,
+    "type": "MCQ",
+    "question": "What does docker run hello-world do?",
+    "options": [
+      " Starts a new Docker container with a test image",
+      " Runs the Docker daemon",
+      " Launches a web server",
+      " Displays Docker networking info"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Runs a test image to verify Docker installation.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 11,
+    "type": "MCQ",
+    "question": "Which of the following is NOT true about Docker containers?",
+    "options": [
+      " They are lightweight",
+      " They can run isolated services",
+      " They always run on Windows",
+      " They are based on images"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Containers can run on Windows or Linux, not just Windows.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 12,
+    "type": "MCQ",
+    "question": "What flag is used with docker run to remove a container after it stops?",
+    "options": [
+      "` --kill",
+      " --rm",
+      " --clean",
+      " --prune"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "--rm auto-removes the container after exit.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 13,
+    "type": "MCQ",
+    "question": "What is DockerHub?",
+    "options": [
+      " A text editor",
+      " A monitoring dashboard",
+      " A public container image registry",
+      " A GUI for Docker Desktop"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "DockerHub is the default public registry for images.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 14,
+    "type": "MCQ",
+    "question": "Which command shows Docker system-wide information?",
+    "options": [
+      " docker status",
+      " docker show",
+      " docker stats",
+      " docker info"
+    ],
+    "answer": "D",
+    "correct_options": [],
+    "explanation": "docker info shows system-wide configuration and resource info.",
+    "weightage": 1.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 15,
+    "type": "TRUE/FALSE",
+    "question": "True or False: Containers include an entire guest operating system.",
+    "options": [
+      true,
+      false,
+      NaN,
+      NaN
+    ],
+    "answer": null,
+    "correct_options": [],
+    "explanation": "Containers share the host OS kernel \u2014 no full OS included.",
+    "weightage": 0.5,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 16,
+    "type": "DOMC",
+    "question": "What are benefits of using Docker containers over virtual machines?",
+    "options": [
+      "Faster startup and lower overhead",
+      "Share host kernel instead of duplicating OS",
+      "Lightweight and efficient resource use",
+      "Require more memory than VMs"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Containers are more lightweight than VMs and use shared kernel, making them efficient and fast.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 17,
+    "type": "DOMC",
+    "question": "What issues does Docker solve in application deployment?",
+    "options": [
+      "Environment inconsistencies between dev and production",
+      "Missing dependencies or library versions",
+      "OS-level conflicts during deployment",
+      "Auto-scaling infrastructure by default"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Docker ensures consistency by packaging the full app environment, not auto-scaling.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 18,
+    "type": "DOMC",
+    "question": "What are characteristics of containers in Docker?",
+    "options": [
+      "Run as isolated user-space processes",
+      "Share the host OS kernel",
+      "Launch faster than VMs",
+      "Require full guest operating systems"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Containers don't run full OS; they are isolated processes using the host kernel.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 19,
+    "type": "DOMC",
+    "question": "What is the role of Docker Compose?",
+    "options": [
+      "Defines multi-container applications using YAML",
+      "Starts all services with one command",
+      "Simplifies management of complex stacks",
+      "Builds Docker images by default"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Compose is for orchestration, not building. Image build is handled by Docker Engine.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 20,
+    "type": "DOMC",
+    "question": "What makes Docker containers portable?",
+    "options": [
+      "Include all dependencies, configs, and environment",
+      "Can run consistently on any system with Docker",
+      "Are isolated from the host environment",
+      "Require the same OS on host and container"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Containers can run on any OS with Docker support, not necessarily the same OS.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 21,
+    "type": "DOMC",
+    "question": "Which of the following are core components of the Docker ecosystem?",
+    "options": [
+      "Docker Engine",
+      "Docker CLI",
+      "Docker Hub",
+      "Kubernetes"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Kubernetes is a separate orchestrator. Docker's core tools include CLI, Engine, Hub, Compose.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 22,
+    "type": "DOMC",
+    "question": "Which problems are avoided when using Docker in development?",
+    "options": [
+      "\"It works on my machine\" bugs",
+      "Missing runtime dependencies",
+      "Conflicting system-level packages",
+      "The need for source control systems"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Docker solves runtime/environment issues, not source control like Git.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 23,
+    "type": "DOMC",
+    "question": "How has Docker transformed DevOps practices?",
+    "options": [
+      "Enabled CI/CD pipelines with consistent artifacts",
+      "Bridged the Dev and Ops silos",
+      "Supported microservices adoption",
+      "Eliminated the need for staging environments"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Docker enables better staging environments, but doesn\u2019t remove their need.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 24,
+    "type": "DOMC",
+    "question": "What are examples of applications managed well with Docker Compose?",
+    "options": [
+      "Node.js + MongoDB + Nginx stack",
+      "Django + React + PostgreSQL + Redis",
+      "Flask with Celery workers and RabbitMQ",
+      "Single container running an OS with SSH"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Compose is used for multi-service stacks, not for managing OS-level containers.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 25,
+    "type": "DOMC",
+    "question": "What does the CMD instruction in a Dockerfile do?",
+    "options": [
+      "Specifies the default command to run when the container starts",
+      "Runs the application inside the container",
+      "Installs Python packages",
+      "Sets environment variables"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2"
+    ],
+    "explanation": "CMD defines the container\u2019s default execution command.",
+    "weightage": 2.0,
+    "domain": "Introduction",
+    "chapter": "Chapter 1"
+  },
+  {
+    "id": 26,
+    "type": "MCQ",
+    "question": "What is the minimum supported OS for Docker Engine on Linux?",
+    "options": [
+      "Ubuntu 16.04+",
+      "Windows XP",
+      "Fedora CoreOS",
+      "Alpine only"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Docker officially supports Ubuntu 16.04+ and other modern Linux distros.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 27,
+    "type": "MCQ",
+    "question": "Which command is used to install Docker on Ubuntu from the official repo?",
+    "options": [
+      "sudo apt install docker.io",
+      "docker install ubuntu",
+      "apt docker",
+      "docker start"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "sudo apt install docker.io installs Docker on Ubuntu.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 28,
+    "type": "MCQ",
+    "question": "What is the purpose of the docker group on Linux?",
+    "options": [
+      "Add GUI support",
+      "Manage Docker networking",
+      "Run Docker as non-root",
+      "Enable Docker Enterprise"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Adding a user to the docker group lets them run Docker without sudo.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 29,
+    "type": "MCQ",
+    "question": "Which command checks if the Docker service is running?",
+    "options": [
+      "docker status",
+      "docker run",
+      "systemctl status docker",
+      "docker-service"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "systemctl status docker checks the Docker daemon status.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 30,
+    "type": "MCQ",
+    "question": "What is the official method to install Docker Compose v2+?",
+    "options": [
+      "Python pip",
+      "Built-in with Docker CLI",
+      "docker-compose install",
+      "Snap store"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "Compose v2 is built into the Docker CLI (as docker compose).",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 31,
+    "type": "MCQ",
+    "question": "Which command verifies Docker Compose is installed?",
+    "options": [
+      "docker-compose -version",
+      "docker compose version",
+      "docker compose -v",
+      "All of the above"
+    ],
+    "answer": "D",
+    "correct_options": [],
+    "explanation": "All three commands verify Docker Compose installation depending on the version.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 32,
+    "type": "MCQ",
+    "question": "What file needs to be present to run docker compose up?",
+    "options": [
+      "Dockerfile",
+      ".env",
+      "docker-compose.yml",
+      "compose.json"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "The docker-compose.yml file is required to define services.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 33,
+    "type": "MCQ",
+    "question": "What port does Docker typically expose for its internal registry?",
+    "options": [
+      "8080",
+      "5000",
+      "3000",
+      "443"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "Docker registries commonly use port 5000.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 34,
+    "type": "MCQ",
+    "question": "What is required before installing Docker Compose on CentOS manually?",
+    "options": [
+      "Yum update",
+      "Go compiler",
+      "pip3",
+      "curl & Git"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Yum must be updated before installing dependencies like curl.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 35,
+    "type": "MCQ",
+    "question": "Which command installs Docker on Amazon Linux 2?",
+    "options": [
+      "yum install docker",
+      "apt install docker",
+      "dnf docker-install",
+      "amazon-linux-docker"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Amazon Linux uses yum install docker for Docker setup.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 36,
+    "type": "MCQ",
+    "question": "Docker Compose v1 was written in which language?",
+    "options": [
+      "Python",
+      "Go",
+      "JavaScript",
+      "Rust"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "Docker Compose v1 was originally written in Python.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 37,
+    "type": "MCQ",
+    "question": "What command pulls Docker images defined in the Compose file without starting containers?",
+    "options": [
+      "docker compose pull",
+      "docker compose images",
+      "docker pull",
+      "compose fetch"
+    ],
+    "answer": "A",
+    "correct_options": [],
+    "explanation": "docker compose pull pulls images without starting containers.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 38,
+    "type": "MCQ",
+    "question": "What\u2019s the easiest way to install Docker on macOS?",
+    "options": [
+      "Brew install",
+      ".pkg installer",
+      "Docker Desktop",
+      "Build from source"
+    ],
+    "answer": "C",
+    "correct_options": [],
+    "explanation": "Docker Desktop is the easiest method for macOS and Windows.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 39,
+    "type": "MCQ",
+    "question": "After installing Docker, which group must a Linux user join?",
+    "options": [
+      "root",
+      "docker",
+      "wheel",
+      "daemon"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "Add users to the docker group to avoid using sudo.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 40,
+    "type": "MCQ",
+    "question": "Which Docker Compose command brings down the services and removes volumes?",
+    "options": [
+      "docker compose kill",
+      "docker compose down -v",
+      "docker compose stop",
+      "docker remove"
+    ],
+    "answer": "B",
+    "correct_options": [],
+    "explanation": "docker compose down -v stops and removes services and volumes.",
+    "weightage": 1.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 41,
+    "type": "DOMC",
+    "question": "What are valid steps for installing Docker on Ubuntu?",
+    "options": [
+      "Update packages with apt",
+      "Add Docker GPG key",
+      "Use snap install docker",
+      "Configure Docker repo"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option4"
+    ],
+    "explanation": "Snap is not the recommended method for Docker on Ubuntu; apt and Docker's repo are preferred.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 42,
+    "type": "DOMC",
+    "question": "Which are valid requirements for Docker on Linux?",
+    "options": [
+      "64-bit CPU",
+      "WSL2",
+      "At least 4 GB RAM",
+      "32-bit OS"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option3"
+    ],
+    "explanation": "WSL2 is for Windows; 32-bit OS is not supported.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 43,
+    "type": "DOMC",
+    "question": "Which of the following are installed by docker-ce package?",
+    "options": [
+      "Docker Engine",
+      "containerd",
+      "Docker Compose CLI plugin",
+      "Kubernetes"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Kubernetes is not part of docker-ce by default.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 44,
+    "type": "DOMC",
+    "question": "Which commands verify Docker is correctly installed?",
+    "options": [
+      "docker version",
+      "docker compose version",
+      "docker ps",
+      "sudo reboot"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "These commands verify Docker services. 'sudo reboot' is not relevant.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 45,
+    "type": "DOMC",
+    "question": "What permissions setup allows Docker to run without sudo?",
+    "options": [
+      "Add user to docker group",
+      "Use chmod 777 on Docker binary",
+      "Use newgrp docker",
+      "Run as root always"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option3"
+    ],
+    "explanation": "Don't use chmod 777 or root access for security reasons.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 46,
+    "type": "DOMC",
+    "question": "What are valid ways to install Docker on macOS?",
+    "options": [
+      "Docker Desktop",
+      "Homebrew install docker",
+      "Building from source",
+      "Using RPM package"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2"
+    ],
+    "explanation": "macOS doesn't support RPM. Docker Desktop is the most common.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 47,
+    "type": "DOMC",
+    "question": "Which steps are needed to install Docker on Windows 10 Home?",
+    "options": [
+      "Install WSL2",
+      "Enable virtualization in BIOS",
+      "Run apt install docker",
+      "Install Docker Desktop"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option4"
+    ],
+    "explanation": "Windows doesn't use apt; Docker Desktop with WSL2 is required.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 48,
+    "type": "DOMC",
+    "question": "Which are signs of successful Docker installation?",
+    "options": [
+      "'Hello from Docker' output",
+      "docker run works",
+      "docker-compose fails",
+      "Docker daemon starts"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option4"
+    ],
+    "explanation": "docker-compose failure is not a success indicator.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 49,
+    "type": "DOMC",
+    "question": "What are required tools before adding Docker repo on Ubuntu?",
+    "options": [
+      "curl",
+      "gnupg",
+      "lsb-release",
+      "systemd"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "systemd is not required just to add the repo.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 50,
+    "type": "DOMC",
+    "question": "What are common fixes for Docker permission issues?",
+    "options": [
+      "Add user to docker group",
+      "Reinstall Docker",
+      "Enable systemd",
+      "Use newgrp"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option4"
+    ],
+    "explanation": "These commands allow Docker use without root.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 51,
+    "type": "DOMC",
+    "question": "Which operating systems officially support Docker?",
+    "options": [
+      "Ubuntu 18.04+",
+      "Windows 10+",
+      "macOS 11+",
+      "Windows XP"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Windows XP is obsolete and unsupported.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 52,
+    "type": "DOMC",
+    "question": "What are valid outputs of 'docker version'?",
+    "options": [
+      "Client version info",
+      "Server version info",
+      "Kernel logs",
+      "Engine build info"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option4"
+    ],
+    "explanation": "Kernel logs are not shown via this command.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 53,
+    "type": "DOMC",
+    "question": "What are safe methods to verify Docker Compose is installed?",
+    "options": [
+      "docker compose version",
+      "docker-compose -v",
+      "docker ps",
+      "compose --help"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option4"
+    ],
+    "explanation": "docker ps shows containers, not Compose installation.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 54,
+    "type": "DOMC",
+    "question": "What are good reasons to use Docker for PostgreSQL dev setup?",
+    "options": [
+      "Fast provisioning",
+      "Isolation from host",
+      "Easy backups",
+      "Manual compilation"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2",
+      "Option3"
+    ],
+    "explanation": "Docker avoids the need for manual compilation.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
+  },
+  {
+    "id": 55,
+    "type": "DOMC",
+    "question": "What tasks require curl during Docker setup?",
+    "options": [
+      "Download GPG key",
+      "Fetch Compose binary",
+      "Install Docker CLI",
+      "Update system"
+    ],
+    "answer": null,
+    "correct_options": [
+      "Option1",
+      "Option2"
+    ],
+    "explanation": "curl helps with remote downloads; apt handles CLI installation.",
+    "weightage": 2.0,
+    "domain": "Installation & Configuration",
+    "chapter": "Chapter 2"
   }
 ]
