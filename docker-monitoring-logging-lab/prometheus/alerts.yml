@@ -1,0 +1,76 @@
+groups:
+
+- name: node-health
+  rules:
+    - alert: HostDown
+      expr: up{job="node-exporter"} == 0
+      for: 2m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Node Exporter Down (instance {{ $labels.instance }})"
+        description: "The node {{ $labels.instance }} is down or unreachable for more than 2 minutes."
+
+- name: container-health
+  rules:
+    - alert: DockerContainerDown
+      expr: up{job="cadvisor"} == 0
+      for: 2m
+      labels:
+        severity: critical
+      annotations:
+        summary: "cAdvisor Down (instance {{ $labels.instance }})"
+        description: "cAdvisor at {{ $labels.instance }} is down for more than 2 minutes."
+
+- name: resource-usage
+  rules:
+    - alert: HighCPUUsage
+      expr: rate(container_cpu_usage_seconds_total{image!=""}[5m]) > 0.8
+      for: 3m
+      labels:
+        severity: warning
+      annotations:
+        summary: "High CPU Usage (container {{ $labels.container_label_com_docker_swarm_service_name }})"
+        description: "Container {{ $labels.container_label_com_docker_swarm_service_name }} CPU usage > 80% for 3 minutes."
+
+    - alert: HighMemoryUsage
+      expr: (container_memory_usage_bytes{image!=""} / container_spec_memory_limit_bytes{image!=""}) > 0.8
+      for: 3m
+      labels:
+        severity: warning
+      annotations:
+        summary: "High Memory Usage (container {{ $labels.container_label_com_docker_swarm_service_name }})"
+        description: "Container {{ $labels.container_label_com_docker_swarm_service_name }} memory usage > 80% for 3 minutes."
+
+- name: disk-space
+  rules:
+    - alert: LowDiskSpace
+      expr: (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"}) < 0.15
+      for: 5m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Low Disk Space on Host ({{ $labels.instance }})"
+        description: "Disk space is less than 15% available on {{ $labels.instance }} root partition."
+
+- name: application-heartbeat
+  rules:
+    - alert: AppHeartbeatMissing
+      expr: absent(up{job="app"})
+      for: 2m
+      labels:
+        severity: critical
+      annotations:
+        summary: "App Heartbeat Missing (Job 'app')"
+        description: "No heartbeat detected for 'app' service. It may be down."
+
+- name: log-spike
+  rules:
+    - alert: ApplicationErrorSpike
+      expr: sum(rate({severity="detected"}[1m])) > 10
+      for: 2m
+      labels:
+        severity: critical
+      annotations:
+        summary: "Application Error Log Spike Detected"
+        description: "More than 10 ERROR or WARN logs per minute detected across containers."

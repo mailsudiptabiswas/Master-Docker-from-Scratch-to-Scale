@@ -1,0 +1,19 @@
+{
+  "title": "Loki Logs Explorer",
+  "panels": [
+    {
+      "type": "logs",
+      "title": "Container Logs",
+      "targets": [
+        {
+          "expr": "{job=\"varlogs\"}",
+          "refId": "A"
+        }
+      ],
+      "datasource": "Loki"
+    }
+  ],
+  "schemaVersion": 30,
+  "version": 1,
+  "editable": true
+}
