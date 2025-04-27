@@ -23,7 +23,7 @@ It follows **real-world DevOps standards** for microservice observability.
 
 ## 🖼️ Architecture
 
-> *(Visual)*
+*(Visual)*
 
 ![Architecture Diagram](A_digital_graphic_design_showcases_promotional_con.png)
 
