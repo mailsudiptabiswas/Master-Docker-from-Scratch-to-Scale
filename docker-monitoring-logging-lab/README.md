@@ -99,13 +99,30 @@ Alertmanager sends:
 ├── docker-compose.yml
 ├── .env
 ├── prometheus/
+│   ├── prometheus.yml
+│   ├── alerts.yml
 ├── grafana/
+│   ├── datasources/
+│   │   ├── prometheus.yaml
+│   │   └── loki.yaml
+│   ├── dashboards/
+│   │   ├── docker-host-overview.json
+│   │   ├── container-metrics.json
+│   │   └── loki-logs.json
 ├── loki/
-├── fluent-bit/
+│   ├── loki-config.yml
+├── fluent-bit/ (optional)
+│   ├── fluent-bit.conf
+│   ├── parsers.conf
 ├── sample-app/
+│   ├── Dockerfile
+│   ├── app.js
+│   └── package.json
 ├── scripts/
+│   ├── docker_health_watchdog.sh
 ├── alertmanager/
-├── README.md
+│   ├── alertmanager.yml
+
 ```
 
 ---
