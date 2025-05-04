@@ -1,4 +1,4 @@
-# Chapter 10: Ports, Expose, Entrypoint – Lab
+# Lab 10: Ports, Expose, Entrypoint – Lab
 
 ## Objective:
 Use EXPOSE, CMD, ENTRYPOINT and test port publishing.
