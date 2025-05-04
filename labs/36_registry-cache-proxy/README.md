@@ -1,4 +1,4 @@
-# Chapter 36: Docker Registry Cache Proxy – Lab
+# Lab 36: Docker Registry Cache Proxy – Lab
 
 ## Objective:
 Set up a caching proxy for Docker Hub using registry image.
