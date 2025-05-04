@@ -1,4 +1,4 @@
-# Chapter 15: Compose Services and Networks – Lab
+# Lab 15: Compose Services and Networks – Lab
 
 ## Objective:
 Create a multi-service Compose app.
