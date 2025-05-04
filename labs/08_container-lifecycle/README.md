@@ -1,4 +1,4 @@
-# Chapter 8: Container Lifecycle – Lab
+# Lab 8: Container Lifecycle – Lab
 
 ## Objective:
 Learn container states and transitions.
