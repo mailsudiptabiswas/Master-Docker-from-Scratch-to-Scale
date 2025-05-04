@@ -16,7 +16,7 @@ Each folder corresponds to a chapter and includes:
 
 
 ## 📚 Docker Basics (Labs 01–10)
-- [Lab 01 – Docker CLI Essentials](./labs/01_docker-introduction/README.md)
+- [Lab 01 – Docker CLI Essentials](./01_docker-introduction/README.md)
 - [Lab 02 – Installation Check](./labs/02_installation-check/README.md)
 - [Lab 03 – Docker CLI Explore](./labs/03_docker-cli-explore/README.md)
 - [Lab 04 – Images & Containers](./labs/04_images-containers/README.md)
