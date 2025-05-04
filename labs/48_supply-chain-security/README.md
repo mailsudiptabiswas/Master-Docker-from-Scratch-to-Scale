@@ -1,4 +1,4 @@
-# Chapter 48: Supply Chain Security – Lab
+# Lab 48: Supply Chain Security – Lab
 
 ## Objective:
 Scan images and Dockerfiles for vulnerabilities.
