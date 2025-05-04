@@ -1,4 +1,4 @@
-# Chapter 39: BuildKit – Lab
+# Lab 39: BuildKit – Lab
 
 ## Objective:
 Enable and use Docker BuildKit for improved builds.
