@@ -1,4 +1,4 @@
-# Chapter 49: CI/CD Infrastructure & GitOps – Lab
+# Lab 49: CI/CD Infrastructure & GitOps – Lab
 
 ## Objective:
 Simulate GitOps flow with Docker, GitHub Actions, and ArgoCD (optional).
