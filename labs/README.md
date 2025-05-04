@@ -9,7 +9,7 @@ Each folder corresponds to a chapter and includes:
 
 ---
 
-# 📘 Lab Index for Mastering Docker
+# 📘 Lab Index for Mastering Docker from Scratch to Scale
 
 ## 🧪 Lab Categories & Index
 
