@@ -1,4 +1,4 @@
-# Chapter 37: Private Docker Registry with Auth – Lab
+# Lab 37: Private Docker Registry with Auth – Lab
 
 ## Objective:
 Set up a private Docker registry with basic auth.
