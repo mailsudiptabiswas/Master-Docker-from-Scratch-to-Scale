@@ -1,4 +1,4 @@
-# Chapter 4: Images, Containers, Layers – Lab
+# Lab 4: Images, Containers, Layers – Lab
 
 ## Objective:
 Build custom Docker images and explore container lifecycle.
