@@ -1,4 +1,4 @@
-# Chapter 21: Logging with Loki + Grafana – Lab
+# Lab 21: Logging with Loki + Grafana – Lab
 
 ## Objective:
 Deploy Loki, Promtail, and Grafana for log aggregation.
