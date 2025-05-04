@@ -1,4 +1,4 @@
-# Chapter 50: Docker Production Checklist – Lab
+# Lab 50: Docker Production Checklist – Lab
 
 ## Objective:
 Review and validate Docker images for production readiness.
