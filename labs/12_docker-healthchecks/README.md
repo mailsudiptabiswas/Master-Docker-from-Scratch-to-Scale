@@ -1,4 +1,4 @@
-# Chapter 12: Docker Health Checks – Lab
+# Lab 12: Docker Health Checks – Lab
 
 ## Objective:
 Add and trigger HEALTHCHECK in Dockerfile.
