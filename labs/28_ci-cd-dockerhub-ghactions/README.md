@@ -1,4 +1,4 @@
-# Chapter 28: CI/CD with DockerHub & GitHub Actions – Lab
+# Lab 28: CI/CD with DockerHub & GitHub Actions – Lab
 
 ## Objective:
 Push Docker images automatically on GitHub commits.
