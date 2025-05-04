@@ -1,4 +1,4 @@
-# Chapter 38: containerd Intro – Lab
+# Lab 38: containerd Intro – Lab
 
 ## Objective:
 Explore `ctr` and containerd directly.
