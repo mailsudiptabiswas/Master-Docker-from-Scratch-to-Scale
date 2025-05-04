@@ -1,4 +1,4 @@
-# Chapter 19: Storage & Shared Volumes – Lab
+# Lab 19: Storage & Shared Volumes – Lab
 
 ## Objective:
 Simulate shared volume using bind mounts or NFS (if available).
