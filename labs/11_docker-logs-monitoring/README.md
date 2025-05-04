@@ -1,4 +1,4 @@
-# Chapter 11: Docker Logs & Monitoring – Lab
+# Lab 11: Docker Logs & Monitoring – Lab
 
 ## Objective:
 View container logs and basic resource stats.
