@@ -1,4 +1,4 @@
-# Chapter 17: Stack Deployments – Lab
+# Lab 17: Stack Deployments – Lab
 
 ## Objective:
 Deploy full stack with multiple services in Swarm.
