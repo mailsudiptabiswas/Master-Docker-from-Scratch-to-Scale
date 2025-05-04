@@ -1,4 +1,4 @@
-# Chapter 32: K8s Deployment & Scaling – Lab
+# Lab 32: K8s Deployment & Scaling – Lab
 
 ## Objective:
 Deploy, scale and update a Kubernetes app.
