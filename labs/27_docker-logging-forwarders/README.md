@@ -1,4 +1,4 @@
-# Chapter 27: Docker Log Forwarding – Lab
+# Lab 27: Docker Log Forwarding – Lab
 
 ## Objective:
 Forward container logs using Fluent Bit to Loki or file.
