@@ -1,4 +1,4 @@
-# Chapter 34: Kubernetes Volumes – Lab
+# Lab 34: Kubernetes Volumes – Lab
 
 ## Objective:
 Use PersistentVolumes and PersistentVolumeClaims.
