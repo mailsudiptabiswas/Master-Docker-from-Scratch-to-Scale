@@ -1,4 +1,4 @@
-# Chapter 25: Traefik as Reverse Proxy – Lab
+# Lab 25: Traefik as Reverse Proxy – Lab
 
 ## Objective:
 Set up Traefik in Docker to reverse proxy web services.
