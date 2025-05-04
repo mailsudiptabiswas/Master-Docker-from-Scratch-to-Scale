@@ -11,15 +11,14 @@ Each folder corresponds to a chapter and includes:
 
 # 📘 Lab Index for Mastering Docker
 
----
-# 🧪 Lab Categories & Index
+## 🧪 Lab Categories & Index
 
 
 ## 📚 Docker Basics (Labs 01–10)
 - [Lab 01 – Docker CLI Essentials](./01_docker-introduction/README.md)
-- [Lab 02 – Installation Check](./labs/02_installation-check/README.md)
-- [Lab 03 – Docker CLI Explore](./labs/03_docker-cli-explore/README.md)
-- [Lab 04 – Images & Containers](./labs/04_images-containers/README.md)
+- [Lab 02 – Installation Check](./02_installation-check/README.md)
+- [Lab 03 – Docker CLI Explore](./03_docker-cli-explore/README.md)
+- [Lab 04 – Images & Containers](./04_images-containers/README.md)
 - [Lab 05 – Docker Compose Introduction](./labs/05_docker-compose-intro/README.md)
 - [Lab 06 – Volumes and Bind Mounts](./labs/06_volumes-bindmounts/README.md)
 - [Lab 07 – Docker Networking](./labs/07_docker-networking/README.md)
