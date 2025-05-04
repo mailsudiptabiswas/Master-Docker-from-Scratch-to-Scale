@@ -1,4 +1,4 @@
-# Chapter 7: Docker Networking – Lab
+# Lab 7: Docker Networking – Lab
 
 ## Objective:
 Explore Docker's default networks and create custom ones.
