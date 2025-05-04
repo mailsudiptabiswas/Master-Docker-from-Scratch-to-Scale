@@ -1,4 +1,4 @@
-# Chapter 13: Docker Security Basics – Lab
+# Lab 13: Docker Security Basics – Lab
 
 ## Objective:
 Run container with limited privileges and a read-only FS.
