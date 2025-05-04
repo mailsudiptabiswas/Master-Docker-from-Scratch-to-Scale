@@ -1,4 +1,4 @@
-# Chapter 22: Build Cache & Layers – Lab
+# Lab 22: Build Cache & Layers – Lab
 
 ## Objective:
 Compare build cache efficiency and layer reuse.
