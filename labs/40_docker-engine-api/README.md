@@ -1,4 +1,4 @@
-# Chapter 40: Docker Engine API – Lab
+# Lab 40: Docker Engine API – Lab
 
 ## Objective:
 Interact with Docker remotely via REST API.
