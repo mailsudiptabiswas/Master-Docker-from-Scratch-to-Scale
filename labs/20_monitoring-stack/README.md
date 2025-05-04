@@ -1,4 +1,4 @@
-# Chapter 20: Monitoring Stack (Prometheus + Grafana) – Lab
+# Lab 20: Monitoring Stack (Prometheus + Grafana) – Lab
 
 ## Objective:
 Deploy Prometheus and Grafana to monitor containers.
