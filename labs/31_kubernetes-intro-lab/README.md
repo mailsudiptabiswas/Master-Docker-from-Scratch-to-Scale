@@ -1,4 +1,4 @@
-# Chapter 31: Kubernetes Introduction – Lab
+# Lab 31: Kubernetes Introduction – Lab
 
 ## Objective:
 Run a basic Pod and Service in Kubernetes (minikube or kubeadm)
