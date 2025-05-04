@@ -1,4 +1,4 @@
-# Chapter 16: Docker Swarm Basics – Lab
+# Lab 16: Docker Swarm Basics – Lab
 
 ## Objective:
 Initialize Swarm, deploy a stack, and scale services.
