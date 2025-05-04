@@ -1,4 +1,4 @@
-# Chapter 9: Advanced Dockerfile – Lab
+# Lab 9: Advanced Dockerfile – Lab
 
 ## Objective:
 Optimize image using multi-stage builds.
