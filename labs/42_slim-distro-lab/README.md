@@ -1,4 +1,4 @@
-# Chapter 42: Slim OS Distros – Lab
+# Lab 42: Slim OS Distros – Lab
 
 ## Objective:
 Compare base images like Alpine, Distroless, BusyBox.
