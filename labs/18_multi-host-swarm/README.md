@@ -1,4 +1,4 @@
-# Chapter 18: Multi-Host Swarm (Simulated) – Lab
+# Lab 18: Multi-Host Swarm (Simulated) – Lab
 
 ## Objective:
 Simulate multi-host with Docker Swarm using loopback interfaces or VM setup.
