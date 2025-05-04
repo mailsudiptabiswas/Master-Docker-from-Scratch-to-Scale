@@ -1,4 +1,4 @@
-# Chapter 23: Advanced Compose & Envs – Lab
+# Lab 23: Advanced Compose & Envs – Lab
 
 ## Objective:
 Use `.env` and Compose overrides.
