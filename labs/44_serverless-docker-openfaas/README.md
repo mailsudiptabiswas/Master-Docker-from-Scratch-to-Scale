@@ -1,4 +1,4 @@
-# Chapter 44: Docker & Serverless with OpenFaaS – Lab
+# Lab 44: Docker & Serverless with OpenFaaS – Lab
 
 ## Objective:
 Deploy a function with OpenFaaS using Docker.
