@@ -1,4 +1,4 @@
-# Chapter 26: Docker Backup & Restore – Lab
+# Lab 26: Docker Backup & Restore – Lab
 
 ## Objective:
 Backup volumes and restore from tar archive.
