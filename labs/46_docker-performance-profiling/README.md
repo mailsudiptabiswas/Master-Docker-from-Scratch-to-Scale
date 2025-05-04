@@ -1,4 +1,4 @@
-# Chapter 46: Docker Performance Profiling – Lab
+# Lab 46: Docker Performance Profiling – Lab
 
 ## Objective:
 Measure resource usage and profile container performance.
