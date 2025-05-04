@@ -1,4 +1,4 @@
-# Chapter 29: Image Slimming – Lab
+# Lab 29: Image Slimming – Lab
 
 ## Objective:
 Compare image sizes between normal and slimmed Dockerfile.
