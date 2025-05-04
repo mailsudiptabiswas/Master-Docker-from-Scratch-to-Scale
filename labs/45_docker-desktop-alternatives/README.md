@@ -1,4 +1,4 @@
-# Chapter 45: Docker Desktop Alternatives – Lab
+# Lab 45: Docker Desktop Alternatives – Lab
 
 ## Objective:
 Use Rancher Desktop, Colima, or Minikube as Docker alternative.
