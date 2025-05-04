@@ -1,4 +1,4 @@
-# Chapter 43: Immutable Infrastructure – Lab
+# Lab 43: Immutable Infrastructure – Lab
 
 ## Objective:
 Rebuild and redeploy apps instead of patching.
