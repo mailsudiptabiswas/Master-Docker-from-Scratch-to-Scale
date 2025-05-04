@@ -1,4 +1,4 @@
-# Chapter 47: Docker Hardening Practices – Lab
+# Lab 47: Docker Hardening Practices – Lab
 
 ## Objective:
 Apply security best practices on Docker containers.
