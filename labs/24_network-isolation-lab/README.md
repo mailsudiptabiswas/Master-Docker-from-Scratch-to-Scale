@@ -1,4 +1,4 @@
-# Chapter 24: Network Isolation & DNS – Lab
+# Lab 24: Network Isolation & DNS – Lab
 
 ## Objective:
 Simulate multi-tier network access.
