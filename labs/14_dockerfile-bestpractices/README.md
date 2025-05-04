@@ -1,4 +1,4 @@
-# Chapter 14: Dockerfile Best Practices – Lab
+# Lab 14: Dockerfile Best Practices – Lab
 
 ## Objective:
 Use best practices like .dockerignore, layer optimization.
