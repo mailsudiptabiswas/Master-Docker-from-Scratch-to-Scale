@@ -1,4 +1,4 @@
-# Chapter 41: Container Runtime Comparison – Lab
+# Lab 41: Container Runtime Comparison – Lab
 
 ## Objective:
 Try alternative runtimes (e.g., Podman, crun, containerd).
