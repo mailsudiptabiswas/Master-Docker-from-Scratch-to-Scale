@@ -3,7 +3,7 @@
 This repository contains hands-on labs about the topices covered in the **“Master Docker from Scratch to Scale”** book.
 
 Each folder corresponds to a chapter and includes:
-- ✅ Step-by-step lab guides
+- ✅ Step-by-Step Lab Guides
 - 🐳 Dockerfiles, Compose files, Kubernetes YAMLs
 - 🛠️ Scripts, GitHub Actions, Security Tools
 
