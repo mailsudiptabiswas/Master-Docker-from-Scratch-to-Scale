@@ -1,4 +1,4 @@
-# Chapter 35: Kubernetes Observability – Lab
+# Lab 35: Kubernetes Observability – Lab
 
 ## Objective:
 Deploy Prometheus and Grafana using Helm or YAMLs.
