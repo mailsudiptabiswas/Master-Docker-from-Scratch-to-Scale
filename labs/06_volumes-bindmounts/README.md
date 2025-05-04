@@ -1,4 +1,4 @@
-# Chapter 6: Docker Volumes & Bind Mounts – Lab
+# Lab 6 6: Docker Volumes & Bind Mounts – Lab
 
 ## Objective:
 Understand volume types and share data between host and container.
