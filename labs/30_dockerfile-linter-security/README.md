@@ -1,4 +1,4 @@
-# Chapter 30: Dockerfile Linting & Security – Lab
+# Lab 30: Dockerfile Linting & Security – Lab
 
 ## Objective:
 Use hadolint and trivy to analyze Dockerfile/image security.
