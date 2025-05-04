@@ -1,4 +1,4 @@
-# Chapter 5: Introduction to Docker Compose – Lab
+# Lab 5: Introduction to Docker Compose – Lab
 
 ## Objective:
 Run a multi-container app using Docker Compose.
