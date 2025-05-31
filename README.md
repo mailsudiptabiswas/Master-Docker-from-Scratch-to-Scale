@@ -151,7 +151,8 @@ Have ideas or improvements? Feel free to:
 This lab series supports the book:  
 **“Mastering Docker from Scratch to Scale: DevSecOps, CI/CD, and Production-Grade Labs for Engineers”**
 
-📗 [Available here](https://github.com/yourname/docker-book)
+📗 [Available here] IN https://www.amazon.in/dp/B0F8G2GLQV
+📗 [Available here] US https://www.amazon.com/dp/9334278749
 
 ---
 
