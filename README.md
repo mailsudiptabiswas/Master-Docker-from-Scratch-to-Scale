@@ -152,8 +152,9 @@ This lab series supports the book:
 **“Mastering Docker from Scratch to Scale: DevSecOps, CI/CD, and Production-Grade Labs for Engineers”**
 
 📗 **Available here:**  
-- 🇮🇳 [Amazon India](https://www.amazon.in/dp/B0F8G2GLQV)  
-- 🇺🇸 [Amazon US](https://www.amazon.com/dp/9334278749)
+- <img src="https://flagcdn.com/in.svg" width="20"> <a href="https://www.amazon.in/dp/B0F8G2GLQV">Amazon India</a><br>
+- <img src="https://flagcdn.com/us.svg" width="20"> <a href="https://www.amazon.com/dp/9334278749">Amazon US</a>
+
 
 ---
 
